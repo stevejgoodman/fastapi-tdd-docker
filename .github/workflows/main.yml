@@ -113,5 +113,5 @@ jobs:
           echo "HEROKU_AUTH_TOKEN=${{ secrets.HEROKU_AUTH_TOKEN }}" >> $GITHUB_ENV
       - name: Release
         run: |
-          pwd
-          release.sh
+          chmod +x ./release.sh
+          ./release.sh
